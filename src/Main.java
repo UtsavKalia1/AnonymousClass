@@ -7,7 +7,15 @@ public class Main {
             return (principal*interest*rate*time)/100;
         }
     };
-
-        System.out.println(calInterest.SimpleInterest(2, 3.5, 100, 60));
+    // we will use lamda now
+        // lamda and anonymous class both
+        // we want to use inline implementation of logic
+    CalInterest calInterestlamda = (p,  i,  r,  t) -> {
+            return (p*i*r*t)/100;
+        };
+        CalInterest calInterestlamda1 = (p,  i,  r,  t) -> (p*i*r*t)/100;
+    // with lamda we can only have implementation of
+        //abstarct class(functional interface
+        System.out.println(calInterestlamda1.SimpleInterest(2, 3.5, 100, 60));
     }
 }

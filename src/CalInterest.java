@@ -4,4 +4,6 @@ public interface CalInterest {
                           double interest,
                           double rate,
                           double time);
+    //when we write functional interface it means it can only
+    // have one abstarct method
 }
